@@ -45,7 +45,7 @@ export default function Navbar() {
   return (
     <>
       {/* desktop nav */}
-      <nav className="flex justify-between items-center min-h-16 px-4 bg-black">
+      <nav className="absolute top-0 left-0 z-10 w-full flex justify-between items-center min-h-20 px-4 bg-[linear-gradient(to_bottom,rgba(11,16,20,0.7)_0%,rgba(11,16,20,0.3)_45%,transparent_100%)]">
         <div className="flex gap-8">
           <a className="text-lg font-bold tracking-widest text-[rgba(255,196,0,0.833)]">
             LOGO

@@ -1,12 +1,15 @@
 import { useState } from "react";
 import heroImg from "./assets/hero.png";
-import Navbar from "./component/Navbar";
+import Navbar from "./page/Navbar";
+import HeroSection from "./page/HeroSection";
 
 function App() {
   return (
     <>
-      <Navbar />
-      
+      <div className="relative">
+        <Navbar />
+        <HeroSection />
+      </div>
     </>
   );
 }
