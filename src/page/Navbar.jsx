@@ -28,8 +28,8 @@ function Navlinks({ mobile = false }) {
           href={link.path}
           className={
             mobile
-              ? "transition-all duration-300 bg-black text-sm text-white p-2 rounded hover:bg-[rgba(255,196,0,0.833)] hover:text-black"
-              : "whitespace-nowrap rounded px-[10px] py-[5px] text-white transition-all duration-300 hover:bg-[rgba(255,196,0,0.833)] hover:text-black"
+              ? "transition-all duration-300 bg-black text-sm text-[#c4c4c4] p-2 rounded hover:bg-[#333333]/[0.13] hover:text-white"
+              : "whitespace-nowrap rounded px-[10px] py-[5px] text-[#c4c4c4] transition-all duration-300 hover:bg-[#333333]/[0.13] hover:text-white"
           }
         >
           {link.name}
@@ -45,9 +45,9 @@ export default function Navbar() {
   return (
     <>
       {/* desktop nav */}
-      <nav className="absolute top-0 left-0 z-10 w-full flex justify-between items-center min-h-20 px-4 bg-[linear-gradient(to_bottom,rgba(11,16,20,0.7)_0%,rgba(11,16,20,0.3)_45%,transparent_100%)]">
+      <nav className="absolute top-0 left-0 z-10 w-full flex justify-between items-center min-h-20 px-4 bg-[linear-gradient(180deg,rgba(0,0,0,0.9)_0%,rgba(0,0,0,0.62)_43%,rgba(0,0,0,0)_100%)]">
         <div className="flex gap-8">
-          <a className="text-lg font-bold tracking-widest text-[rgba(255,196,0,0.833)]">
+          <a className="text-lg font-bold tracking-widest text-[#e1bf77]">
             LOGO
           </a>
           <div className="hidden lg:flex gap-2 text-sm items-center">
@@ -60,12 +60,12 @@ export default function Navbar() {
             return (
               <button
                 key={action.name}
-                className="group rounded border-2 bg-[#00000046] px-[10px] py-[5px] text-white transition-all duration-300 hover:border-[rgba(255,196,0,0.721)]"
+                className="group rounded border-2 bg-[#00000046] px-[10px] py-[5px] text-white transition-all duration-300 hover:border-[#e1bf77]"
               >
                 {action.icon ? (
                   <action.icon
                     size={18}
-                    className="transition-all duration-300 group-hover:text-[rgba(255,196,0,0.833)]"
+                    className="transition-all duration-300 group-hover:text-[#e1bf77]"
                   />
                 ) : (
                   action.name

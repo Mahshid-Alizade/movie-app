@@ -1,17 +1,50 @@
 import React from "react";
-import MovieDetailsCard from "../component/MovieDetailsCard";
+import HeroMovieDetailsCard from "../component/HeroMovieDetailsCard";
 import monsterWallpaper from "../assets/Monster-Wallpaper-v4.jpg";
+import HeroMovieCard from "../component/HeroMovieCard";
 
 export default function HeroSection() {
   return (
     <div
-      className="grid grid-cols-3 py-36 pr-16 text-white bg-cover bg-center bg-no-repeat"
+      className="grid grid-cols-3 py-36 pr-16 text-white bg-cover bg-center bg-no-repeat gap-16"
       style={{ backgroundImage: `url(${monsterWallpaper})` }}
     >
       {/* hero section banners */}
-      <section className="col-span-2">Banners</section>
+      <section className="col-span-2 flex items-center justify-end gap-6 overflow-hidden mask-[linear-gradient(to_right,transparent_0%,black_15%,black_100%)]">
+        <HeroMovieCard
+          url={monsterWallpaper}
+          score={6.9}
+          year={2025}
+          type={"Series"}
+        />
+        <HeroMovieCard
+          url={monsterWallpaper}
+          score={6.9}
+          year={2025}
+          type={"Series"}
+        />
+        <HeroMovieCard
+          url={monsterWallpaper}
+          score={6.9}
+          year={2025}
+          type={"Series"}
+        />
+        <HeroMovieCard
+          url={monsterWallpaper}
+          score={6.9}
+          year={2025}
+          type={"Series"}
+        />
+        <HeroMovieCard
+          url={monsterWallpaper}
+          score={6.9}
+          year={2025}
+          type={"Series"}
+        />
+      </section>
+
       {/* banner titles */}
-      <MovieDetailsCard />
+      <HeroMovieDetailsCard />
     </div>
   );
 }

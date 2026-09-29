@@ -1,6 +1,7 @@
 import React from "react";
+import Score from "./Score";
 
-export default function MovieDetailsCard(params) {
+export default function HeroMovieDetailsCard(params) {
   return (
     <div className="flex flex-col gap-8 items-start ">
       {/* title */}
@@ -8,19 +9,14 @@ export default function MovieDetailsCard(params) {
         <h2 className="text-3xl font-semibold">Brothers</h2>
       </div>
       {/* details */}
-      <div>
+      <div className="text-[#dbdbdb]">
         <div>
-          <span>2026</span> |{" "}
-          <span>
-            <span className="font-bold text-[rgba(255,196,0,0.833)]">IMDb</span>{" "}
-            <span className="font-bold fo">7.9</span>
-            <span className="text-xs">/10</span>
-          </span>
+          <span>2026</span> | <Score score={7.9} company={"IMDb"} />
         </div>
         <span>subtitle</span> | <span>genre</span>
       </div>
       {/* summary */}
-      <div>
+      <div className="text-[#c4c4c4]">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
         necessitatibus consectetur est corporis sunt dolores laboriosam dicta
         quo, nam cumque vitae libero saepe veniam tempore asperiores molestiae,
@@ -28,7 +24,7 @@ export default function MovieDetailsCard(params) {
         minima earum necessitatibus fuga impedit cum nihil mollitia similique
         recusandae saepe eius quasi qui cumque!
       </div>
-      <button>details and watch ...</button>
+      <button className="text-[#dbdbdb]">details and watch ...</button>
     </div>
   );
 }
