@@ -7,3 +7,18 @@
 body {
   margin: 0;
 }
+
+
+@keyframes slide {
+  from {
+    translate: 0;
+  }
+
+  to {
+    translate: -50%;
+  }
+}
+
+.animate-slide {
+  animation: slide 30s infinite linear;
+}

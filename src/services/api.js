@@ -6,6 +6,6 @@ import React from 'react'
 export const getTrendingMovies = async () => {
     const response = await fetch(`${BASE_URL}/trending/movie/week?api_key=${API_KEY}`);
     const data = await response.json();
-
-    console.log(data.results)
+    // console.log(data.results);
+    return (data.results);
 }

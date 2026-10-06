@@ -3,7 +3,7 @@ import Score from "./Score";
 
 export default function HeroMovieDetailsCard(params) {
   return (
-    <div className="flex flex-col gap-8 items-start ">
+    <div className="flex flex-col gap-8 items-start z-100">
       {/* title */}
       <div>
         <h2 className="text-3xl font-semibold">Brothers</h2>
